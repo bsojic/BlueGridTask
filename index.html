@@ -1,0 +1,101 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'Templates')">Templates</button>
+      <button class="tablinks" onclick="openTab(event, 'Products')">Products <span id="number"></span></button>
+    </div>
+
+    <!-- Templates tab -->
+    <div id="Templates" class="tabcontent">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <div class="row" id="templatesList">
+
+            </div> 
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-4 col-sm-offset-4">
+                    <div class="pagination-links">
+                      <button data-toggle="modal" data-target="#templatesModal" class="btn btn-next btn-primary disabled">Next</button>
+                      <span>or</span>
+                      <button class="btn btn-link">Back</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </div>
+        </div>     
+      </div>  
+      <div class="modal fade" id="templatesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Selected template</h5>
+            </div>
+            <div class="modal-body clearfix">
+              <div id="selectedTemplate"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Products tab -->
+    <div id="Products" class="tabcontent">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row" id="productsList">
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <div class="pagination-links-prod">
+              <button data-toggle="modal" data-target="#productsModal" class="btn btn-next btn-primary disabled">Next</button>
+              <span>or</span>
+              <button class="btn btn-link">Back</button>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="modal fade" id="productsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Selected template</h5>
+            </div>
+            <div class="modal-body clearfix">
+              <div id="selectedProducts"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+  </div>
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <<script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 
